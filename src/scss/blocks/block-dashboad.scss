@@ -11,61 +11,65 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
     &__square{
       display: flex;
       flex-direction: column;
       gap: 1.5rem;
-      border-top: 0.5rem solid var(--color-blue);;
+     
     }
     &__followers{
-      width: 326px;
-      height: 216px;
-      background-color: #979797;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      gap: 0.5rem
+      gap: 0.5rem;
+      width: 326px;
+      height: 216px;
+      background-color: var(--color-background);
+      border-top: 0.4rem solid var(--color-blue);
+      @include hover{
+        background-color: var(--color-hover-square);
+        cursor: pointer;
+    }
+    }
+
+    &__followers--red{
+      border-top: 0.4rem solid var(--color-red);
+    }
+   
+    &__followers--orange{
+      border-top: 0.4rem solid var(--color-orange);
     }
     &__users{
       display: flex;
       align-items: center;
       gap: 1rem;
     }
-    &__name{
-      color: var(--color-letters);
-      font-size: 10px;
-      font-weight: bold;
-    
-    }
 
     &__years{
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 56px;
-      font-weight: bold;
       width: 129px;
       height: 48px;
     
     }
-    &__followersdefinition{
-      color: var(--color-letters);
-      letter-spacing: 5px;
-      font-size: 12px;
-    }
+
 
     &__updowntoday{
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 1rem;
+      gap: 0.5rem;
       width: 66px;
       height: 15px;
       margin-top: 1rem;
-      color: #1EB589;
+      color: var(--color-green);
     }
-
+    &__updowntoday--red{
+      color: var(--color-red);
+    }
     &__days{
       display: flex;
       gap: 0.2rem;
@@ -73,83 +77,15 @@
 
 }
 
-/*
-.dashboard__followers{
-  width: 326px;
-  height: 216px;
-  background-color: #979797;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 0.5rem
-}
-
-.dashboard__users{
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.dashboard__name{
-  color: #63687D;
-  font-size: 10px;
-  font-weight: bold;
-
-}
-
-.dashboard__years{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 56px;
-  font-weight: bold;
-  width: 129px;
-  height: 48px;
-
-}
-
-.dashboard__followersdefinition{
-  color: #63687D;
-  letter-spacing: 5px;
-  font-size: 12px;
-}
-
-*/
-
-
-
-
-/*
-  .card-image-container {
-    position: relative;
+.dashboard-responsive{
+  @include responsive(1200px){
+    width: 1200px;
+  &__box{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.9375rem;
-    overflow: hidden;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
   }
-  
-  .icon-view {
-    position: absolute;
-    opacity: 0;
-  }
-  
-  .card-image-container::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(0 255 248 / 0.5);
-    opacity: 0;
-  }
-  
-  @media (hover: hover) {
-    .card-image-container:hover .icon-view {
-      opacity: 1;
-    }
-  
-    .card-image-container:hover::before {
-      opacity: 1;
-    }
-*/
+}
+}

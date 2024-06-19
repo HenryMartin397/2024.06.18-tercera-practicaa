@@ -1,0 +1,43 @@
+@use '../mixins/hover.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
+
+.overview{
+    @include responsive(1200px){
+        width: 1200px;
+    }
+&__square{
+    margin-bottom: 2rem;
+    @include responsive(1400px){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+    &__followers{
+        display: flex;
+       
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 326px;
+        height: 126px;
+        background-color: var(--color-background);
+    }
+    &__likes{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin-left: 1rem;
+        margin-right: 1rem;
+
+    }
+
+    &__number{
+        font-size: 32px;
+        font-weight: bold;
+        color: var(--color-numbers);
+    }
+}

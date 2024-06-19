@@ -1,1 +1,42 @@
+.letters{
+    &__name{
+        color: var(--color-letters);
+        font-size: 10px;
+        font-weight: bold;
+    }
 
+    &__years{
+        font-size: 46px;
+        font-weight: bold;
+    }
+    &__followersdefinition{
+        color: var(--color-letters);
+        letter-spacing: 5px;
+        font-size: 12px;
+      }
+
+    &__likes{
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-letters);
+    }
+
+    &__socialmediadashboard{
+        font-weight: bold;
+        font-size: 24px;
+        color: var(--color-numbers);
+      
+    }
+
+    &__darkmode{
+        font-size: 14px;
+        font-weight: bold;
+        color: var(--color-letters);
+
+    }
+
+}
+
+
+
+  

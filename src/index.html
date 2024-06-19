@@ -11,28 +11,31 @@
   </head>
   <body>
     <main>  
-    <section class="dashboard">
-      <div class="dashboard__title">
-        <div class="dashboard__massmedia">
-          <p class="dashborad__socialmediadashboard">Social Media Dashboard</p>
-          <p class="total__followers">Total Followers: 23,004</p>
+    <section class="titlemain"> 
+      <div class="titlemain__square">
+        <div class="titlemain__massmedia">
+          <p class="letters__socialmediadashboard">Social Media Dashboard</p>
+          <p class="letters__darkmode">Total Followers: 23,004</p>
         </div>
-        <div class="dashborad__darkmode">
-          <p class="button">Dark Mode</p>
-          <img src="assets/images/icon-down.svg" alt="darkmode-button">
-          <img src="assets/images/icon-down.svg" alt="darkmode-button">
-
+        <div class="titlemain__darkmode">
+          <p class="letters__darkmode">Dark Mode</p>
+            <div class="titlemain__button">  
+              <i class="bi bi-toggle-on titlemain__toogle-on"></i> 
+              <i class="bi bi-toggle-off titlemain__toogle-off"></i>
+            </div>
         </div>
       </div>
+    </section>
 
-      <div class="dashboard__square">
+    <section class="dashboard dashboard-responsive">
+      <div class="dashboard__square dashboard-responsive__box">
         <div class="dashboard__followers">
           <div class="dashboard__users">   
             <img class="logos" src="assets/images/icon-facebook.svg" alt="logo-facebook">
-            <p class="dashboard__name">@nathanf</p>
+            <p class="letters__name">@nathanf</p>
           </div>
-          <span class="dashboard__years">1987</span>
-          <span class="dashboard__followersdefinition">Followers</span>
+          <span class="dashboard__years letters__years">1987</span>
+          <span class="letters__followersdefinition">Followers</span>
           <div class="dashboard__updowntoday">
             <i class="bi bi-caret-up-fill"></i>
             <p class="dashboard__days"><span>12</span><span>Today</span></p>
@@ -41,21 +44,169 @@
 
         <div class="dashboard__followers">
           <div class="dashboard__users">   
-            <img class="logos" src="assets/images/icon-facebook.svg" alt="logo-facebook">
-            <p class="dashboard__name">@nathanf</p>
+            <img class="logos" src="assets/images/icon-twitter.svg" alt="logo-twitter">
+            <p class="letters__name">@nathanf</p>
           </div>
-          <span class="dashboard__years">1987</span>
-          <span class="dashboard__followersdefinition">Followers</span>
+          <span class="dashboard__years letters__years">1044</span>
+          <span class="letters__followersdefinition">Followers</span>
           <div class="dashboard__updowntoday">
             <i class="bi bi-caret-up-fill"></i>
-            <p class="dashboard__days"><span>12</span><span>Today</span></p>
+            <p class="dashboard__days"><span>99</span><span>Today</span></p>
+          </div>
+        </div>
+
+        <div class="dashboard__followers dashboard__followers--orange">
+          <div class="dashboard__users">   
+            <img class="logos" src="assets/images/icon-instagram.svg" alt="logo-instagram">
+            <p class="letters__name">@realnathanf</p>
+          </div>
+          <span class="dashboard__years letters__years">11k</span>
+          <span class="letters__followersdefinition">Followers</span>
+          <div class="dashboard__updowntoday">
+            <i class="bi bi-caret-up-fill"></i>
+            <p class="dashboard__days"><span>1099</span><span>Today</span></p>
+          </div>
+        </div>
+
+        <div class="dashboard__followers dashboard__followers--red">
+          <div class="dashboard__users">   
+            <img class="logos" src="assets/images/icon-youtube.svg" alt="logo-youtube">
+            <p class="letters__name">@Nathan F.</p>
+          </div>
+          <span class="dashboard__years letters__years">8239</span>
+          <span class="letters__followersdefinition">Followers</span>
+          <div class="dashboard__updowntoday dashboard__updowntoday--red">
+            <i class="bi bi-caret-down-fill"></i>
+            <p class="dashboard__days "><span>1099</span><span>Today</span></p>
           </div>
         </div>
       </div>
 
-      <div class="dashboard__overview">
+   
+    </section>
+    <section class="overview dashboard">
+      <h2>Overview - Today</h2>
 
-      </div>
+        <div class="overview__square dashboard__square">
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Page Views</p>
+              <img class="logos" src="assets/images/icon-facebook.svg" alt="logo-facebook">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">87</p>
+                <div class="dashboard__updowntoday">
+                  <i class="bi bi-caret-up-fill"></i>
+                  <p>3%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Likes</p>
+              <img class="logos" src="assets/images/icon-facebook.svg" alt="logo-facebook">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">52</p>
+                <div class="dashboard__updowntoday dashboard__updowntoday--red">
+                  <i class="bi bi-caret-down-fill"></i>
+                  <p>2%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Likes</p>
+              <img class="logos" src="assets/images/icon-instagram.svg" alt="logo-instagram">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">5462</p>
+                <div class="dashboard__updowntoday dashboard__updowntoday--red">
+                  <i class="bi bi-caret-down-fill"></i>
+                  <p>2257%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Profile views</p>
+              <img class="logos" src="assets/images/icon-instagram.svg" alt="logo-instagram">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">52k</p>
+                <div class="dashboard__updowntoday">
+                  <i class="bi bi-caret-up-fill"></i>
+                  <p>1375%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Retweets</p>
+              <img class="logos" src="assets/images/icon-twitter.svg" alt="logo-twitter">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">117</p>
+                <div class="dashboard__updowntoday">
+                  <i class="bi bi-caret-up-fill"></i>
+                  <p>303%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Likes</p>
+              <img class="logos" src="assets/images/icon-twitter.svg" alt="logo-twitter">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">507</p>
+                <div class="dashboard__updowntoday">
+                  <i class="bi bi-caret-up-fill"></i>
+                  <p>553%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Likes</p>
+              <img class="logos" src="assets/images/icon-youtube.svg" alt="logo-youtube">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">107</p>
+                <div class="dashboard__updowntoday dashboard__updowntoday--red">
+                  <i class="bi bi-caret-down-fill"></i>
+                  <p>19%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Total Views</p>
+              <img class="logos" src="assets/images/icon-youtube.svg" alt="logo-youtube">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">1407</p>
+                <div class="dashboard__updowntoday dashboard__updowntoday--red">
+                  <i class="bi bi-caret-down-fill"></i>
+                  <p>12%</p>
+                </div>
+                </div>
+            </div>
+            <div class="overview__followers">
+              <div class="overview__likes">   
+              <p class="letters__likes">Total Views</p>
+              <img class="logos" src="assets/images/icon-youtube.svg" alt="logo-youtube">
+              </div>
+              <div class="overview__likes">   
+                <p class="overview__number">1407</p>
+                <div class="dashboard__updowntoday dashboard__updowntoday--red">
+                  <i class="bi bi-caret-down-fill"></i>
+                  <p>12%</p>
+                </div>
+                </div>
+            </div>
+          </div>
+          
     </section>
 
     <script type="module" src="./js/index.js"></script>

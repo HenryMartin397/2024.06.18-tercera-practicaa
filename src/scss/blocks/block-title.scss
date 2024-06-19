@@ -1,0 +1,59 @@
+@use '../mixins/hover.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+@use '../mixins/responsive.scss' as *;
+.titlemain{
+    width: 375px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    @include responsive(1200px){
+        width: 1200px;
+    }
+
+    &__square{
+        width: 326px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+        @include responsive(1200px){
+            display: flex;
+            justify-content: space-between;
+            width: 1000px;
+        }
+    }
+
+    &__massmedia{
+        width: 284px;
+        height: 20px;
+        margin-bottom: 5.5rem;
+    }
+
+    &__darkmode{
+        justify-content: space-between;
+        display: flex;
+    }
+
+    &__button{
+        align-items: center;
+        display: flex;
+        position: relative;
+    }
+//REVISAR
+    &__toogle-on{
+        position: absolute;
+        transform: scale(0);
+        @include hover{
+            transform: scale(1);
+        }
+    }
+
+    &__toogle-off{
+        position: absolute;
+        opacity: 1;
+        @include hover{
+            opacity: 0;
+        }
+    }
+  
+}
