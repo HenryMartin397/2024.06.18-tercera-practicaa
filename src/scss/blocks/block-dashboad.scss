@@ -2,11 +2,120 @@
 @use '../mixins/pseudo.scss' as *;
 @use '../mixins/responsive.scss' as *;
 
+
+
 .dashboard{
     width: 375px;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__square{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      border-top: 0.5rem solid var(--color-blue);;
+    }
+    &__followers{
+      width: 326px;
+      height: 216px;
+      background-color: #979797;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 0.5rem
+    }
+    &__users{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    &__name{
+      color: var(--color-letters);
+      font-size: 10px;
+      font-weight: bold;
+    
+    }
+
+    &__years{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 56px;
+      font-weight: bold;
+      width: 129px;
+      height: 48px;
+    
+    }
+    &__followersdefinition{
+      color: var(--color-letters);
+      letter-spacing: 5px;
+      font-size: 12px;
+    }
+
+    &__updowntoday{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      width: 66px;
+      height: 15px;
+      margin-top: 1rem;
+      color: #1EB589;
+    }
+
+    &__days{
+      display: flex;
+      gap: 0.2rem;
+    }
+
 }
 
+/*
+.dashboard__followers{
+  width: 326px;
+  height: 216px;
+  background-color: #979797;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.dashboard__users{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dashboard__name{
+  color: #63687D;
+  font-size: 10px;
+  font-weight: bold;
+
+}
+
+.dashboard__years{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 56px;
+  font-weight: bold;
+  width: 129px;
+  height: 48px;
+
+}
+
+.dashboard__followersdefinition{
+  color: #63687D;
+  letter-spacing: 5px;
+  font-size: 12px;
+}
+
+*/
 
 
 
