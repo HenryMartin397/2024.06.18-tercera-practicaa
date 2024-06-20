@@ -4,11 +4,11 @@
 
 .overview{
     @include responsive(1200px){
-        width: 1200px;
+        width: 100%;
     }
 &__square{
     margin-bottom: 2rem;
-    @include responsive(1400px){
+    @include responsive(1200px){
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
